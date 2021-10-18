@@ -6,8 +6,6 @@ const Command = require("./Command");
 
 const Event = require("./Event");
 
-const config = require("../data/config.json");
-
 const fs = require("fs");
 
 class Client extends Discord.Client {
@@ -18,7 +16,7 @@ class Client extends Discord.Client {
      * @type {Discord.Collection<string, Command>}
      */
     this.commands = new Discord.Collection();
-    this.prefix = config.PREFIX;
+    this.prefix = ".";
   }
 
   start(token) {
@@ -46,5 +44,4 @@ class Client extends Discord.Client {
     this.login(token);
   }
 }
-
 module.exports = Client;
