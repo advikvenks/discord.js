@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.2.0-dev.1630973087.f57791c",
-    "dotenv": "^10.0.0"
+    "secrets": "^1.1.5"
   },
   "repository": {
     "type": "git",
