@@ -6,4 +6,4 @@ const Command = require("./src/Structures/Command");
 const client = new Client();
 require("dotenv").config();
 
-client.start(process.env.CLIENT_TOKEN);
+client.start(process.env.TOKEN);
