@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.2.0-dev.1630973087.f57791c",
-    "secrets": "^1.1.5"
+    "discord.js": "^13.2.0-dev.1630973087.f57791c"
   },
   "repository": {
     "type": "git",
