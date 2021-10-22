@@ -6,7 +6,7 @@ module.exports = new Command({
   description: "kicks a member",
   permission: "KICK_MEMBERS",
   run(message, args, client) {
-    message.mentions.members.first().kick();
     message.reply(`${message.mentions.members.first()} has been kicked`);
+    message.mentions.members.first().kick();
   },
 });
