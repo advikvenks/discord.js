@@ -27,7 +27,7 @@ class Client extends Discord.Client {
         /**
          * @type {Command}
          */
-        const command = require(`../Commands/${file}`);
+        const command = require(`../commands/${file}`);
         console.log(`Command ${command.name} loaded`);
         this.commands.set(command.name, command);
       });
