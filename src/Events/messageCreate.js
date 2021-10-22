@@ -1,4 +1,5 @@
 const Event = require("../structures/Event");
+
 module.exports = new Event("messageCreate", (client, message) => {
   if (message.author.bot) return;
 
