@@ -1,7 +1,10 @@
 const Event = require("../structures/Event");
+const Discord = require("discord.js");
 
 module.exports = new Event("messageCreate", (client, message) => {
   if (message.author.bot) return;
+
+  message = Discord.Message;
 
   if (!message.content.startsWith(client.prefix)) return;
 
