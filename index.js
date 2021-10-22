@@ -1,6 +1,6 @@
 console.clear();
 
-import Client from "./src/Structures/Client.js";
+const Client = require("./src/structures/Client.js");
 
 const client = new Client();
 require("dotenv").config();
