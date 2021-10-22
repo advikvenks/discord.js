@@ -1,7 +1,6 @@
 console.clear();
 
-const Client = require("./src/Structures/Client.js");
-const Command = require("./src/Structures/Command.js");
+import Client from "./src/Structures/Client.js";
 
 const client = new Client();
 require("dotenv").config();
