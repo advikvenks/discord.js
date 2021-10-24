@@ -1,4 +1,5 @@
 console.clear();
+var port = process.env.PORT || 8080;
 
 const Client = require("./src/structures/Client.js");
 
