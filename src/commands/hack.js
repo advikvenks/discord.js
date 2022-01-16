@@ -3,6 +3,7 @@ const Command = require("../structures/Command");
 module.exports = new Command({
   name: "hack",
   description: "hacks a user",
+  syntax: ".hack @ playername",
   permission: "SEND_MESSAGES",
 
   async run(message, args, client) {

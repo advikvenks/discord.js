@@ -36,6 +36,7 @@ var __awaiter =
 module.exports = new Command({
   name: "meme",
   description: "Gets a random meme from reddit!",
+  syntax: ".meme",
   permission: "SEND_MESSAGES",
   async run(message, args, client) {
     return __awaiter(this, void 0, void 0, function* () {

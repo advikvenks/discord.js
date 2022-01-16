@@ -5,6 +5,7 @@ const fs = require("fs");
 module.exports = new Command({
   name: "help",
   description: "displays commands",
+  syntax: ".help",
   permission: "SEND_MESSAGES",
   async run(message, args, client) {
     let list = "";
@@ -12,7 +13,9 @@ module.exports = new Command({
       .filter((file) => file.endsWith("js"))
       .forEach((file) => {
         const command = require(`./${file}`);
-        list = list + `\n${command.name} : ${command.description}`;
+        list =
+          list +
+          `\n${command.name} : ${command.description}, syntax: ${command.syntax}`;
       });
     message.reply(list);
     list = "";

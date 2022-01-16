@@ -4,6 +4,7 @@ const Discord = require("discord.js");
 module.exports = new Command({
   name: "embed",
   description: "makes an embed",
+  syntax: ".embed",
   permission: "SEND_MESSAGES",
   async run(message, args, client) {
     const embed = new Discord.MessageEmbed();
