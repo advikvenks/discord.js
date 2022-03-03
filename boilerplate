@@ -1,0 +1,10 @@
+const Command = require("../structures/Command");
+const Discord = require("discord.js");
+
+module.exports = new Command({
+  name: "",
+  description: "",
+  syntax: "",
+  permission: "SEND_MESSAGES",
+  async run(message, args, client) {},
+});
