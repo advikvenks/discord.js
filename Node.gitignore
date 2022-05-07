@@ -389,4 +389,4 @@ FodyWeavers.xsd
 .env
 .package-lock.json
 
-config.js
+.config.js
