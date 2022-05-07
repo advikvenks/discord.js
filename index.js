@@ -3,6 +3,8 @@ console.clear();
 const Client = require("./src/structures/Client.js");
 
 const client = new Client();
-const config = require("./config.json");
+const config = require("./config.js");
 
-client.start(config.BOT_TOKEN);
+console.log(config.TOKEN)
+
+// client.start(config.TOKEN);
