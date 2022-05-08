@@ -3,8 +3,6 @@ console.clear();
 const Client = require("./src/structures/Client.js");
 
 const client = new Client();
-const config = require("./config.js");
+require("dotenv").config();
 
-console.log(config.TOKEN)
-
-// client.start(config.TOKEN);
+client.start(process.env.BOT_TOKEN);
